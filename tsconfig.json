@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "declaration": true // 生成*.d.ts
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
