@@ -1,16 +1,16 @@
 {
   "name": "ding-bot-sdk",
   "version": "0.0.1",
-  "description": "推啊埋点sdk",
+  "description": "钉钉自定义机器人sdk",
   "main": "dist/dingBot.main.js",
   "module": "dist/dingBot.module.js",
   "typings": "dist/index.d.ts",
   "author": "ltt",
   "license": "MIT",
-  "homepage": "https://github.com/leitingting08/ding-bot/blob/master/README.md",
+  "homepage": "https://github.com/leitingting08/ding-bot-sdk/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leitingting08/ding-bot"
+    "url": "https://github.com/leitingting08/ding-bot-sdk"
   },
   "scripts": {
     "watch": "rollup -c -w",
