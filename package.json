@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "author": "ltt",
   "license": "MIT",
-  "homepage": "https://github.com/leitingting08/ding-bot/README.md",
+  "homepage": "https://github.com/leitingting08/ding-bot/blob/master/README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/leitingting08/ding-bot"
