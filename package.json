@@ -1,5 +1,5 @@
 {
-  "name": "ding-bot",
+  "name": "@sum/ding-bot",
   "version": "0.0.2",
   "description": "推啊埋点sdk",
   "main": "dist/dingBot.main.js",

@@ -5,9 +5,9 @@
 ## 安装
 
 ```
-npm install ding-bot
+npm install @sum/ding-bot
 # or
-yarn add ding-bot
+yarn add @sum/ding-bot
 ```
 
 ## 初始化
