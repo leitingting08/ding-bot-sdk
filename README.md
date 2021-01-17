@@ -13,7 +13,9 @@ yarn add ding-bot-sdk
 ## 初始化
 
 ```
-import Bot from 'ding-bot'
+import Bot from 'ding-bot-sdk'
+# or
+const Bot = require('ding-bot-sdk')
 
 // Webhook地址: https://oapi.dingtalk.com/robot/send?access_token=xxx
 const bot = new Bot({
