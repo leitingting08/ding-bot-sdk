@@ -17,7 +17,7 @@
     "build": "npm run clean && cross-env NODE_ENV=prod && rollup -c",
     "build:debug": "npm run clean && cross-env NODE_ENV=dev rollup -c",
     "clean": "rm -rf ./dist",
-    "deploy": "npm run release && npm run build && npm publish --access public && git push --follow-tags",
+    "deploy": "npm run release && npm run build && npm publish && git push --follow-tags",
     "lint": "prettier --write src",
     "release": "standard-version"
   },
