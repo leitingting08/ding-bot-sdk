@@ -1,4 +1,4 @@
-# ding-bot 钉钉自定义机器人的封装
+# 钉钉自定义机器人的封装
 
 [官方文档](https://ding-doc.dingtalk.com/document/app/custom-robot-access)
 
