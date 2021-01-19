@@ -14,15 +14,16 @@ const defaultOptions = {
 // https://ding-doc.dingtalk.com/document/app/custom-robot-access
 class Bot{
     _initData: InitData = {
+      base_url:'',
       access_token: '',
       secret: ''
     }
     _webhookUrl: string
     constructor(_initData: InitData){
-      const { access_token, secret } = _initData
+      const { access_token, secret, base_url = 'https://oapi.dingtalk.com/robot/send' } = _initData
       const timestamp = new Date().getTime()
       const sign = this.signFn(secret,`${timestamp}\n${secret}`) 
-      this._webhookUrl = `https://oapi.dingtalk.com/robot/send?access_token=${access_token}&timestamp=${timestamp}&sign=${sign}`
+      this._webhookUrl = `${base_url}?access_token=${access_token}&timestamp=${timestamp}&sign=${sign}`
     }
 
     signFn = (secret, content) =>{

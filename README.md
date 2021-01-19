@@ -19,9 +19,10 @@ const Bot = require('ding-bot-sdk')
 
 // Webhook地址: https://oapi.dingtalk.com/robot/send?access_token=xxx
 const bot = new Bot({
-  access_token: 'xxx', // Webhook地址后的access_token
-  secret: 'xxx' // 安全设置：加签的secret
-})
+  base_url: 'https://oapi.dingtalk.com/robot/send', // 可选 不填默认 https://oapi.dingtalk.com/robot/send
+  access_token: 'xxx', // Webhook地址后的access_token // 必填
+  secret: 'xxx' // 安全设置：加签的secret 必填
+}) 
 ```
 
 ## 发送消息
