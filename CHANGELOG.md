@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/leitingting08/ding-bot-sdk/compare/v1.0.0...v1.1.0) (2021-01-25)
+
+
+### Features
+
+* 更改配置 ([43e80cb](https://github.com/leitingting08/ding-bot-sdk/commit/43e80cb61f672a549d11daf014753b7c66f0caa0))
+
 ## [1.0.0](https://github.com/leitingting08/ding-bot-sdk/compare/v0.0.3...v1.0.0) (2021-01-19)
 
 

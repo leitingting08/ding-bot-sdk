@@ -1,6 +1,6 @@
 {
   "name": "ding-bot-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "钉钉自定义机器人sdk",
   "main": "lib/dingBot.main.js",
   "module": "lib/dingBot.module.js",
