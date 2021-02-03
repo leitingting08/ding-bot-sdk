@@ -67,5 +67,8 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
