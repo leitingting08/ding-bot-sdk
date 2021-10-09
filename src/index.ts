@@ -34,20 +34,17 @@ class Bot{
     }
 
     send (json = defaultOptions){
-        try {
-            
-            let options = {
-                headers,
-                json
-              };
-            request.post(this._webhookUrl, options, function(_error, _response, body){
-                console.log(`send msg, response: ${JSON.stringify(body)}`);
-            });
-        }
-        catch(err) {
-            console.error(err);
-            return false;
-        }        
+      let options = {
+        headers,
+        json
+      };
+    return new Promise((resolve, reject)=>{
+      request.post(this._webhookUrl, options, function(_error, _response, body){
+        console.log(`send msg, response: ${JSON.stringify(body)}`);
+        resolve(_response)
+        reject(_error)
+      }); 
+     })      
     }
 }
 

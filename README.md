@@ -29,24 +29,30 @@ const bot = new Bot({
 
 [格式和钉钉机器人开发文档保持一致](https://ding-doc.dingtalk.com/document/app/custom-robot-access)
 
-text类型
-```
+text类型，返回回调内容
+
+```js
 bot.send({
-    "msgtype": "text",
-    "text": {
-        "content": "我就是我, @150XXXXXXXX 是不一样的烟火"
-    },
-    "at": {
-        "atMobiles": [
-            "150XXXXXXXX"
-        ], 
-        "isAtAll": false
-    }
+  "msgtype": "text",
+  "text": {
+      "content": "我就是我, @150XXXXXXXX 是不一样的烟火"
+  },
+  "at": {
+      "atMobiles": [
+          "150XXXXXXXX"
+      ], 
+      "isAtAll": false
+  }
+}).then(res=>{
+  console.log('res',res)
+}).catch(error=>{
+  console.log('error',error)
 })
 ```
 
 link类型
-```
+
+```js
 bot.send({
     "msgtype": "link", 
     "link": {
@@ -59,7 +65,8 @@ bot.send({
 ```
 
 markdown类型
-```
+
+```js
 bot.send({
     "msgtype": "markdown",
     "markdown": {
@@ -76,7 +83,8 @@ bot.send({
 ```
 
 整体跳转ActionCard类型
-```
+
+```js
 bot.send({
     "actionCard": {
         "title": "乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身", 
@@ -92,7 +100,8 @@ bot.send({
 ```
 
 独立跳转ActionCard类型
-```
+
+```js
 bot.send({
     "msgtype": "actionCard",
     "actionCard": {
@@ -115,7 +124,8 @@ bot.send({
 ```
 
 FeedCard类型
-```
+
+```js
 bot.send({
     "msgtype": "feedCard",
     "feedCard": {
@@ -138,7 +148,8 @@ bot.send({
 ## 常见问题
 
 当出现以下错误时，表示消息校验未通过，请查看机器人的安全设置。
-```
+
+```json
 // 消息内容中不包含任何关键词
 {
   "errcode":310000,

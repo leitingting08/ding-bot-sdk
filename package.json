@@ -1,6 +1,6 @@
 {
   "name": "ding-bot-sdk",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "钉钉自定义机器人sdk",
   "main": "lib/dingBot.main.js",
   "module": "lib/dingBot.module.js",
@@ -15,7 +15,7 @@
   "scripts": {
     "watch": "rollup -c -w",
     "build": "npm run clean && cross-env NODE_ENV=prod && rollup -c",
-    "build:debug": "npm run clean && cross-env NODE_ENV=dev rollup -c",
+    "build:debug": "npm run clean && cross-env NODE_ENV=dev rollup -c -w",
     "clean": "rm -rf ./lib",
     "deploy": "npm run release && npm run build && npm publish && git push --follow-tags",
     "lint": "prettier --write src",
