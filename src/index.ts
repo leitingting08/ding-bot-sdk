@@ -20,6 +20,10 @@ class Bot{
     }
     _webhookUrl: string
     constructor(_initData: InitData){
+     this._initData = _initData;
+    }
+  
+    webhookUrlFn = (_initData: InitData) =>{
       const { access_token, secret, base_url = 'https://oapi.dingtalk.com/robot/send' } = _initData
       const timestamp = new Date().getTime()
       const sign = this.signFn(secret,`${timestamp}\n${secret}`) 
@@ -38,6 +42,7 @@ class Bot{
         headers,
         json
       };
+    this.webhookUrlFn(_initData);
     return new Promise((resolve, reject)=>{
       request.post(this._webhookUrl, options, function(_error, _response, body){
         console.log(`send msg, response: ${JSON.stringify(body)}`);
