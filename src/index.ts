@@ -42,7 +42,7 @@ class Bot{
         headers,
         json
       };
-    this.webhookUrlFn(_initData);
+    this.webhookUrlFn(this._initData);
     return new Promise((resolve, reject)=>{
       request.post(this._webhookUrl, options, function(_error, _response, body){
         console.log(`send msg, response: ${JSON.stringify(body)}`);
